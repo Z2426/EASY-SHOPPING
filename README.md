@@ -25,7 +25,6 @@ GVHD: Mai Anh Thơ
   - HIBERNATE
   - SPRINGBOOT
   - MYSQL
-  - 
 ---
 ### 3. Hướng dẫn cài đặt
   - Cài đặt MySQL Workbench (Điều chỉnh thông tin  đăng nhập csdl trên file application-dev-properties Chạy file dataset trong thư mục database)
