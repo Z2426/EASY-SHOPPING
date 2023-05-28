@@ -20,7 +20,7 @@ GVHD: Mai Anh Thơ
   - Xem chi tiết đơn hàng 
   - Thanh toán thông qua Paypal
 ---
-### 2. CÔNG NGHỆ SỬ DỤNG :
+### 2. Công nghệ sử dụng :
   - JPA 
   - HIBERNATE
   - SPRINGBOOT
