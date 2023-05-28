@@ -15,10 +15,10 @@ GVHD: Mai Anh Thơ
   - Tìm kiếm sản phẩm.
   - Thêm sản phẩm vào giỏ hàng 
   - Xem sản phẩm trong giỏ hàng 
-  - Đặt hàng.
+  - Đặt hàng
   - Xem lịch sửa đơn hàng 
-  - Xem chi tiết đơn hàng 
-  - Thanh toán thông qua Paypal
+  
+  
 ---
 ### 2. Công nghệ sử dụng :
   - JPA 
