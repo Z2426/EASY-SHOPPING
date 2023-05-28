@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/web_store_test?useSSL=false
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp-mail.outlook.com
+    port: 587
+    username: senkoShop@outlook.com
+    password: Midostar10035
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8080
+
