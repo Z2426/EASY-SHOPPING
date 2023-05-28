@@ -20,7 +20,15 @@ GVHD: Mai Anh Thơ
   - Xem chi tiết đơn hàng 
   - Thanh toán thông qua Paypal
 ---
-### 2. Hướng dẫn cài đặt
-  - Cài đặt MySQL Workbench (Điều chỉnh thông tin  đăng nhập csdl trên file application-dev-properties)
+### 2. CÔNG NGHỆ SỬ DỤNG :
+  - JPA 
+  - HIBERNATE
+  - SPRINGBOOT
+  - MYSQL
+  - 
+---
+### 3. Hướng dẫn cài đặt
+  - Cài đặt MySQL Workbench (Điều chỉnh thông tin  đăng nhập csdl trên file application-dev-properties Chạy file dataset trong thư mục database)
+   -Default : username:  root/ pass : 123456)
   - Java version 11
-  - Link chạy chương trình: http://localhost:6789/frontend/client
+  - Link chạy chương trình: http://localhost:8080/
