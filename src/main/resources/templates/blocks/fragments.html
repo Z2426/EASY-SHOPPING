@@ -100,22 +100,6 @@
                            sec:authorize="isAuthenticated()">[[#{navbar.logout}]]</a>
                     </div>
                 </li>
-                <!--GitHub, linked ect icons-->
-                <li class="nav-item">
-                    <a href="https://github.com/SEM24" class="nav-link waves-effect rounded">
-                        <span class="fab fa-github"></span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://www.linkedin.com/in/samir-homsi-kak" class="nav-link waves-effect rounded">
-                        <span class="fab fa-linkedin"></span>
-                    </a>
-                </li>
-                <div class="language_selector">
-                    <a class="custom_link waves-effect rounded" th:href="@{'?lang=en'}">EN</a>
-                    <div class="vertical-line" style="height: 25px;"></div>
-                    <a class="custom_link waves-effect rounded" th:href="@{'?lang=uk'}">UA</a>
-                </div>
             </ul>
         </div>
     </div>
@@ -207,58 +191,20 @@
         <!--Grid row-->
         <div class="row mt-4">
             <!--Grid column-->
-            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <div class="mb-4 mb-md-0 text-center">
                 <h5 class="text-uppercase mb-4">[[#{footer.titleAbout}]]</h5>
-                <p><strong>SENKO</strong> [[#{footer.textAbout}]]</p>
+                <p><strong>SENKO</strong> offers a wide range of home appliances, peripherals and even clothing.</p>
 
-                <!-- Social icons-->
-                <div class="mt-4">
-                    <!--GitHub-->
-                    <button onclick="location.href='https://github.com/SEM24'" type="button"
-                            class="btn btn-circle btn-md">
-                        <em class="fab fa-github fa-lg"></em></button>
-                    <!-- Linkedin -->
-                    <button onclick="location.href='https://www.linkedin.com/in/samir-homsi-kak'" type="button"
-                            class="btn btn-circle btn-md">
-                        <em class="fab fa-linkedin fa-lg"></em></button>
-                </div>
             </div>
+
 
             <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4 pb-1">[[#{footer.address}]]</h5>
-
-                <ul class="fa-ul" style="margin-left: 1.65em;">
-                    <li class="mb-3">
-                        <span class="fa-li"><em class="fas fa-home"></em></span><span
-                            class="ms-2">[[#{footer.city}]]</span>
-                    </li>
-                    <li class="mb-3">
-                        <span class="fa-li"><em class="fas fa-envelope"></em></span><span
-                            class="ms-2">senkostore@outlook.com</span>
-                    </li>
-                    <li class="mb-3">
-                        <span class="fa-li"><em class="fas fa-phone"></em></span><span
-                            class="ms-2">+380(93)87-35-222</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">[[#{footer.findUs}]]</h5>
-                <iframe class="google_map rounded"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20515.64968586056!2d36.26422165814631!3d50.002803835495385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0de6da556e3%3A0x9ef00b69907b366e!2z0JHQsNGA0LDQsdCw0YjQvtCy0L4!5e0!3m2!1sru!2snl!4v1660918084998!5m2!1sru!2snl"
-                        allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </div>
     </div>
     <!-- Grid container -->
 
     <!-- Copyright -->
     <div class="text-center copyright p-3">
-        <span class="credit">[[#{footer.created}]] <a href="https://github.com/SEM24">SEM</a> | </span>
         <span class="far fa-copyright"></span><span> [[#{footer.copyright}]]</span>
     </div>
 </footer>
