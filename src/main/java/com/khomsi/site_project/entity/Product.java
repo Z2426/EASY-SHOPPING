@@ -77,14 +77,6 @@ public class Product {
     }
 
 
-    //TODO add a new field in db discount if i need discount in future
-//    @Transient
-//    public float getDiscountPrice(){
-//        if (discountPercent > 0)
-//        {
-//            return price * ((100 - discountPercent) / 100);
-//        }
-//        return this.price;
-//    }
+
 
 }
