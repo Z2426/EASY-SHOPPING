@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.security.Principal;
 
 @RestController
-public class ShoppingCartRestController {
+public class CartController {
     @Autowired
     private OrderBasketService orderBasketService;
     @Autowired
@@ -53,17 +53,7 @@ public class ShoppingCartRestController {
     @PostMapping("/basket/remove/{pid}")
     public String removeProductFromBasket(@PathVariable("pid") Integer productId,
                                           Principal principal) {
-        if (principal == null) {
-            return "You must login to remove product";
-        }
-        User user = userService.getUserByLogin(principal.getName());
-
-        if (user == null) return "You must login to remove product";
-
-        orderBasketService.removeProduct(productId, user);
-
+        orderBasketService.removeProduct(productId, userService.getUserByLogin(principal.getName()));
         return "The product has been removed from your shopping basket.";
     }
-
-
 }
