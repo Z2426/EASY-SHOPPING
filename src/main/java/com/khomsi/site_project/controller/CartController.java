@@ -24,11 +24,7 @@ public class CartController {
         if (principal == null) {
             return "You must login to add this product to your shopping basket";
         }
-        User user = userService.getUserByLogin(principal.getName());
-
-        if (user == null) return "You must login to add this product to your shopping basket";
-
-        Integer addedQuantity = orderBasketService.addProduct(productId, quantity, user);
+        Integer addedQuantity = orderBasketService.addProduct(productId, quantity, userService.getUserByLogin(principal.getName()));
 
         return addedQuantity > 1 ? addedQuantity + " items of this product were added to your shopping basket"
                 : addedQuantity + " item of this product was added to your shopping basket";
