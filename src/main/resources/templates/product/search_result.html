@@ -4,19 +4,21 @@
 <body class="d-flex flex-column min-vh-100">
 <div th:replace="blocks/fragments :: navbar"></div>
 <div class="container-fluid">
-    <div th:if="${totalItems} > 0">
-        <h4 class="text-center mb-4 mt-4"
-            style="font-weight: 400;">Search Result for '[[${keyword}]]'</h4>
+    <div th:if="${totalItems != null && totalItems > 0}">
+        <h4 class="text-center mb-4 mt-4" style="font-weight: 400;">
+            Search Result for '[[${keyword}]]'
+        </h4>
     </div>
-    <div th:unless="${totalItems} > 0">
-        <h4 class="text-center mb-4 mt-4"
-            style="font-weight: 400;">No match found</h4>
+    <div th:if="${totalItems != null && totalItems > 0}">
+        <h4 class="text-center mb-4 mt-4" style="font-weight: 400;">
+            No match found
+        </h4>
         <br><br><br>
     </div>
     <div class="row text-center">
-        <th:block th:each="product: ${resultList}">
+        <div th:each="product: ${resultList}">
             <div th:replace="product/product_fragment :: content"></div>
-        </th:block>
+        </div>
     </div>
     <!--Pagination-->
     <div th:replace="blocks/fragments :: pagination('/search', 'product')"></div>

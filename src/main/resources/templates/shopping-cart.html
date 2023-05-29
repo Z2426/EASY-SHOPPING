@@ -18,10 +18,7 @@
             <div class="content">
                 <div class="block-heading" th:color="red" th:if="${#lists.isEmpty(orderBaskets)}">
                     <h3>[[#{shoppingCart.errorTitle}]]</h3>
-                    <a th:href="@{'/'}">
-                        <button type="button" class="btn btn-primary">[[#{shoppingCart.errorSubtitle}]]
-                        </button>
-                    </a>
+
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-lg-8">
@@ -88,11 +85,7 @@
                             </div>
                             <a th:href="@{'/payment'}"
                                class="payment-btn btn-lg btn-block mt-3 text-center">[[#{shoppingCart.checkout}]]</a>
-                            <a th:href="@{'/'}" class="d-flex justify-content-center">
-                                <button type="button"
-                                        class="btn-lg btn-sm mt-3 custom_buttons">[[#{shoppingCart.errorSubtitle}]]
-                                </button>
-                            </a>
+
                         </div>
                     </div>
                 </div>

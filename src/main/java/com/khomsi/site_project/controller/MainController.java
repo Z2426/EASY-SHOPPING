@@ -57,12 +57,15 @@ public class MainController {
     public String showShoppingCard(Model model,
                                    Principal principal) {
         if (principal != null) {
-            List<OrderBasket> orderBaskets = userService.getUserByLogin(principal.getName()).getOrderBaskets();
+            User user =userService.getUserByLogin(principal.getName());
+            List<OrderBasket> orderBaskets = user.getOrderBaskets();
+
             model.addAttribute("orderBaskets", orderBaskets);
-            model.addAttribute("order", new Order());
-        } else {
-            model.addAttribute("error", new NotFoundException("Order basket was not found"));
-            return "/error/404";
+           // model.addAttribute("order", new Order());
+        }
+        else {
+
+            return "login";
         }
         return "shopping-cart";
     }
